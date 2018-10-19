@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: webserver
+spec:
+	replicas: 1
+	template:
+		metadata:
+		labels:
+		app: websvr
+		tier: backend
+		track: stable
+	specs:
+		containers:
+			- name: websvr
+			 image: safiultest/websvr:1.0
+			 ports:
+				- name: webport
+				containerPort: 8083
