@@ -17,6 +17,12 @@ Once, the image is built you can start the container using the below command
 ```
 docker run -p 9000:8083 safiultest/websvr:1.0
 ```
+In the assignment it was asked to use port 9000 to see the webserver that is why when I started the container, I map port 8083 to port 9000. To see if the webserver is running use the below URL on a web browser
+
+```
+http://localhost:9000
+```
+
 ### Task 2
 
 Task 2 requires a script which can automate the whole setup which will include creating an image, login to docker hub, pushing the image to dockerhub and then running the container. 
@@ -37,7 +43,7 @@ http://localhost:9000
 
 ### Task 3
 
-The last excercise is to create a YAML file for kubernetes. The YAML file is already created and attached above. The image that will be used will be used is the same that was created using the Task 1.
+The last excercise is to create a YAML file for kubernetes. The YAML file is already created and attached above. The image that  will be used is the same that was created using Task 1.
 
 To create and run the container we can use the command below 
 
