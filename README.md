@@ -29,17 +29,21 @@ To run the script use the below command
 ./test.sh
 ```
 
-And repeat
+To test if the web server is running go to a web browser and use the URL
 
 ```
-until finished
+http://localhost:9000
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Task 3
 
-## Running the tests
+The last excercise is to create a YAML file for kubernetes. The YAML file is already created and attached above. The image that will be used will be used is the same that was created using the Task 1.
 
-Explain how to run the automated tests for this system
+To create and run the container we can use the command below 
+
+```
+kubectl create -f 
+```
 
 ### Break down into end to end tests
 
